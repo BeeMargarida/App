@@ -122,9 +122,9 @@ class ValidateLoginPage extends Component {
         return (
             <>
                 {this.getAutoAuthState() === CONST.AUTO_AUTH_STATE.FAILED && <ExpiredValidateCodeModal />}
-                {this.getAutoAuthState() === CONST.AUTO_AUTH_STATE.JUST_SIGNED_IN && (!isTfaRequired || isSignedIn) && <AbracadabraModal />}
                 {this.getAutoAuthState() === CONST.AUTO_AUTH_STATE.JUST_SIGNED_IN && isTfaRequired && !isSignedIn && <TfaRequiredModal />}
-                {this.getAutoAuthState() === CONST.AUTO_AUTH_STATE.NOT_STARTED && (
+                {this.getAutoAuthState() === CONST.AUTO_AUTH_STATE.NOT_STARTED && isSignedIn && <AbracadabraModal />}
+                {this.getAutoAuthState() === CONST.AUTO_AUTH_STATE.NOT_STARTED && !isSignedIn && (
                     <ValidateCodeModal
                         accountID={this.getAccountID()}
                         code={this.getValidateCode()}
