@@ -25,7 +25,7 @@ function DisablePage(props) {
     }, []);
 
     return (
-        <ScreenWrapper>
+        <ScreenWrapper shouldShowOfflineIndicator={false}>
             <HeaderWithCloseButton
                 title={props.translate('twoFactorAuth.disableTwoFactorAuth')}
                 shouldShowBackButton

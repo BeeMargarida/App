@@ -38,6 +38,8 @@ const propTypes = {
     /** Whether to use the maxHeight (true) or use the 100% of the height (false) */
     shouldEnableMaxHeight: PropTypes.bool,
 
+    shouldShowOfflineIndicator: PropTypes.bool,
+
     ...windowDimensionsPropTypes,
 
     ...environmentPropTypes,
@@ -53,6 +55,7 @@ const defaultProps = {
     keyboardAvoidingViewBehavior: 'padding',
     shouldEnableMaxHeight: false,
     shouldEnablePickerAvoiding: true,
+    shouldShowOfflineIndicator: true,
 };
 
 export {propTypes, defaultProps};

@@ -51,7 +51,7 @@ function CodesPage(props) {
     }, []);
 
     return (
-        <ScreenWrapper>
+        <ScreenWrapper shouldShowOfflineIndicator={false}>
             <HeaderWithCloseButton
                 title={props.translate('twoFactorAuth.headerTitle')}
                 shouldShowStepCounter
