@@ -525,6 +525,7 @@ export default {
         congrats: 'Felicidades, ahora tienes esa seguridad adicional.',
         copyCodes: 'Copiar códigos',
         copy: 'Copiar',
+        downloadCodes: "Descargar",
         disable: 'Deshabilitar',
     },
     twoFactorAuthForm: {
