@@ -872,6 +872,8 @@ const CONST = {
         GUIDES_DOMAIN: 'team.expensify.com',
     },
 
+    // NOTE: this is just temporary, it should be retrieved from .env or be initialized
+    // on app init and saved in Onyx
     ACCOUNT_ID: {
         CONCIERGE: '8392101',
     },
